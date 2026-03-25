@@ -1,16 +1,58 @@
-# React + Vite
+# React Gallery Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple image gallery built with **React**, **Axios**, and **TailwindCSS** that fetches photos from the [Picsum API](https://picsum.photos/) and displays them in a grid layout with pagination controls.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Fetches images dynamically from the Picsum API  
+- Displays images in a responsive grid  
+- Pagination with **Prev/Next** buttons  
+- Reusable `Card` component for each image  
+- Reusable `PaginationButton` component for navigation  
+- Loading state indicator  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
+- React (Functional Components + Hooks)  
+- Axios (API requests)  
+- TailwindCSS (styling)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/gallery-project.git
+   ```
+
+2. Navigate into the project folder:
+   ```bash
+   cd gallery-project
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📸 Preview
+The app fetches **12 images per page** and allows navigation using **Prev/Next** buttons.
+![alt text](image.png)
+
+---
+
+## 🔮 Future Improvements
+- Add total page count and disable **Next** on the last page  
+- Add spinner animation for loading state  
+- Add error handling with retry option  
+- Implement infinite scroll  
